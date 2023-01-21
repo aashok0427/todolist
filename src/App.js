@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import TODOLIST from './components/todolist'
+import Card from "./components/Contacts/Card";
+import contacts from "./containers/contacts";
+
+
+function createCard(contact) {
+  return (
+    <Card
+      key={contact.id}
+      name={contact.name}
+      image={contact.imgURL}
+      tel={contact.phone}
+      email={contact.email}
+      zip={contact.zip}
+    />
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TODOLIST /> 
+      {/* <h1 className="heading">My Contacts</h1>
+      {contacts.map(createCard)} */}
     </div>
   );
 }
 
 export default App;
+

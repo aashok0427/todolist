@@ -1,0 +1,76 @@
+body {
+    background: #2196f3;
+}
+
+.TodoCard {            
+    width: 650px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 10%;
+    box-shadow: 0px 0px 5px 5px ghostwhite;         
+}
+
+.btnAdd {
+    width: 90px;
+    background-color: #2196f3;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 40px;
+    font-weight: bold;
+}
+.btnClearData, .btnDeleteTask{
+    width: 110px;
+    background-color: #f23737;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    height: 40px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.search{
+    padding: 10px;
+    border-radius: 5px;  
+    border-color: #2196f3;       
+    width: 79%; 
+}
+
+.divHeader {
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+    margin: 35px;         
+}
+
+.divHeaderItemSearch {
+    flex-grow: 3;
+}
+.divHeaderItemButton {
+    flex-grow: 1;
+}
+
+.data{
+    margin: 0;
+}
+
+div ul li {
+    background-color: lightcyan;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    list-style-type: none;
+    
+}
+
+.notodos{      
+    padding: 30px;
+    color: black;
+}
